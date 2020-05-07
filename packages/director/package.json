@@ -17,6 +17,7 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir dist --extensions \".ts\" --source-maps inline",
+    "gcp-build": "npm run build",
     "test": "jest",
     "lint": "eslint ./ --ext ts",
     "start": "node ./dist/",
